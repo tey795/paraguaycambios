@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실시간 환율 정보</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            text-align: center;
+        }
+        .exchange-rate {
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+        }
+        .exchange-rate h2 {
+            color: #333;
+        }
+        .exchange-rate p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>실시간 환율 정보</h1>
+
+    <div class="exchange-rate">
+        <h2>MyD Cambios</h2>
+        <p>Venta: {{ myd_venta }}</p>
+        <p>Compra: {{ myd_compra }}</p>
+    </div>
+
+    <div class="exchange-rate">
+        <h2>Maxicambios</h2>
+        <p>Venta: {{ maxi_venta }}</p>
+        <p>Compra: {{ maxi_compra }}</p>
+    </div>
+
+    <div class="exchange-rate">
+        <h2>Cambios Chaco</h2>
+        <p>Venta: {{ chaco_venta }}</p>
+        <p>Compra: {{ chaco_compra }}</p>
+    </div>
+</body>
+</html>
